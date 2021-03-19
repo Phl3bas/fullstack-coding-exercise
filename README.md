@@ -13,7 +13,7 @@ A sample dataset of users is [supplied](sampledata.json).
 ## Technical Requirements
 
 - We'd like you to use React but add whatever UI framework you feel comfortable with
-- Typescript is acceptable but not required
+- Typescript is preferred, but not required
 - Use any libraries you think you need
 - The backend should provide a REST endpoint to return the user data
 - Provide tests
