@@ -2,7 +2,7 @@
 
 Create a web application that displays all the registered users for a product and filters the users by name. The table should show each users name, location and email address. The data for the users should be requested from a REST API.
 
-A sample dataset of users is [supplied](/fresh8gaming/fullstack-coding-exercise/blob/main/sampledata.json).
+A sample dataset of users is [supplied](sampledata.json).
 
 ## User story
 
