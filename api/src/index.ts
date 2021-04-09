@@ -1,5 +1,4 @@
 import http from "http";
-import { AddressInfo } from "node:net";
 import app from "./app";
 
 const server: http.Server = http.createServer(app);
