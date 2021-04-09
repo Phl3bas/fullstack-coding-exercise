@@ -2,8 +2,8 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "dev": "",
-    "test": "",
+    "dev": "lerna run dev --parallel",
+    "test": "lerna run test",
     "postinstall": "lerna bootstrap"
   },
   "devDependencies": {
