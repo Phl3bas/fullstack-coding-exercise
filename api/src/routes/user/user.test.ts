@@ -11,4 +11,8 @@ describe("user router", () => {
   it("should respond to a get request with 200 status", async () => {
     return await request(app).get("/api/user/").expect(200);
   });
+
+  it("should return content type of json", async () => {
+    return await request(app).get("/api/user").expect("Content-Type", /json/);
+  });
 });
