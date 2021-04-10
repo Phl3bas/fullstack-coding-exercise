@@ -4,16 +4,15 @@ import { UserTable } from "./components/userTable";
 import { UserTableItem } from "./components/userTableItem";
 import { useFetchUsers } from "./hooks/useFetchUsers";
 import { useFilteredUserList } from "./hooks/useFilterUserList";
-import { makeStyles, Paper } from "@material-ui/core";
+import { Container, makeStyles } from "@material-ui/core";
+import { Alert } from "@material-ui/lab";
 
 const useStyles = makeStyles({
+  header: {
+    textAlign: "center",
+  },
   nousers: {
     margin: "10px auto",
-    height: 76,
-    width: 400,
-    display: "flex",
-    flexDirection: "row",
-    placeContent: "center",
   },
 });
 
@@ -30,8 +29,8 @@ function App() {
   const classes = useStyles();
 
   return (
-    <div>
-      <h1>Super Amasing User Search!</h1>
+    <Container>
+      <h1 className={classes.header}>User Search</h1>
       <Filter handleChange={handleChange} />
       <UserTable>
         {filteredList.map(({ name, email, location }: User) => (
@@ -39,11 +38,11 @@ function App() {
         ))}
       </UserTable>
       {filteredList.length === 0 && (
-        <Paper className={classes.nousers} variant="outlined">
-          There are no users found...
-        </Paper>
+        <Alert className={classes.nousers} variant="filled" severity="info">
+          There are no users found with that search term.
+        </Alert>
       )}
-    </div>
+    </Container>
   );
 }
 

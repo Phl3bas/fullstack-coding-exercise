@@ -9,32 +9,53 @@ import {
   TableBody,
 } from "@material-ui/core";
 import React from "react";
+import { theme } from "../../theme";
 
 interface UserTableProps {
   children: React.ReactNode;
 }
 
-const useStyles = makeStyles({
-  table: {
-    minWidth: 650,
+const useStyles = makeStyles((theme) => ({
+  container: {
+    maxHeight: "70vh",
   },
-});
+  table: {
+    width: "100%",
+    backgroundColor: "#344555ee",
+  },
+  paper: {
+    padding: "20px",
+    backgroundColor: "#344555aa",
+  },
+  head: {
+    color: theme.palette.primary.light,
+    background: "#344555ee",
+    borderBottomColor: "#34455533",
+  },
+}));
 
 export const UserTable = ({ children }: UserTableProps) => {
   const classes = useStyles();
 
   return (
-    <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="user-table">
-        <TableHead>
-          <TableRow>
-            <TableCell>Name</TableCell>
-            <TableCell>Email</TableCell>
-            <TableCell>Location</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>{children}</TableBody>
-      </Table>
-    </TableContainer>
+    <Paper className={classes.paper} elevation={2}>
+      <TableContainer component={Paper} className={classes.container}>
+        <Table
+          className={classes.table}
+          size="small"
+          stickyHeader
+          aria-label="user-table"
+        >
+          <TableHead>
+            <TableRow>
+              <TableCell className={classes.head}>Name</TableCell>
+              <TableCell className={classes.head}>Email</TableCell>
+              <TableCell className={classes.head}>Location</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>{children}</TableBody>
+        </Table>
+      </TableContainer>
+    </Paper>
   );
 };
