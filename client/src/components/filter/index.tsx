@@ -34,6 +34,7 @@ export const Filter = ({ handleChange }: FilterProps) => {
   return (
     <form onSubmit={(e) => e.preventDefault()} className={classes.form}>
       <TextField
+        data-testid="filter"
         className={classes.filter}
         onChange={handleChange}
         id="outlined-basic"

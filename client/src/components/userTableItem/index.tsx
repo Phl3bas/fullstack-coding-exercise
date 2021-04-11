@@ -21,7 +21,7 @@ export const UserTableItem = ({
 }: UserTableItemProps) => {
   const classes = useStyle();
   return (
-    <TableRow hover>
+    <TableRow hover data-testid="table-row">
       <TableCell component="th" scope="row" className={classes.cell}>
         {name}
       </TableCell>
