@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`to match snapshot 1`] = `
+<div>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg"
+  >
+    <h1
+      class="makeStyles-header-1"
+    >
+      User Search
+    </h1>
+    <form
+      class="makeStyles-form-3"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root makeStyles-filter-4"
+        data-testid="filter"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled"
+          data-shrink="false"
+          for="outlined-basic"
+          id="outlined-basic-label"
+          style="color: rgb(121, 134, 203);"
+        >
+          Filter users
+        </label>
+        <div
+          class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+          style="color: rgb(121, 134, 203);"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiFilledInput-input"
+            id="outlined-basic"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </form>
+    <div
+      class="MuiPaper-root makeStyles-paper-7 MuiPaper-elevation2 MuiPaper-rounded"
+    >
+      <div
+        class="MuiPaper-root MuiTableContainer-root makeStyles-container-5 MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <table
+          aria-label="user-table"
+          class="MuiTable-root makeStyles-table-6 MuiTable-stickyHeader"
+          data-testid="table"
+        >
+          <thead
+            class="MuiTableHead-root"
+          >
+            <tr
+              class="MuiTableRow-root MuiTableRow-head"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-head makeStyles-head-8 MuiTableCell-sizeSmall MuiTableCell-stickyHeader"
+                scope="col"
+              >
+                Name
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head makeStyles-head-8 MuiTableCell-sizeSmall MuiTableCell-stickyHeader"
+                scope="col"
+              >
+                Email
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head makeStyles-head-8 MuiTableCell-sizeSmall MuiTableCell-stickyHeader"
+                scope="col"
+              >
+                Location
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="MuiTableBody-root"
+          >
+            <tr
+              class="MuiTableRow-root MuiTableRow-hover"
+              data-testid="table-row"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-body makeStyles-cell-9 MuiTableCell-sizeSmall"
+                role="cell"
+                scope="row"
+              >
+                Joe Clarke
+              </th>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-cell-9 MuiTableCell-sizeSmall"
+              >
+                Email@email.com
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-cell-9 MuiTableCell-sizeSmall"
+              >
+                bournemouth
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root MuiTableRow-hover"
+              data-testid="table-row"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-body makeStyles-cell-9 MuiTableCell-sizeSmall"
+                role="cell"
+                scope="row"
+              >
+                Bob Bobbington
+              </th>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-cell-9 MuiTableCell-sizeSmall"
+              >
+                thebobbinator@gmail.com
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-cell-9 MuiTableCell-sizeSmall"
+              >
+                Manchester
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root MuiTableRow-hover"
+              data-testid="table-row"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-body makeStyles-cell-9 MuiTableCell-sizeSmall"
+                role="cell"
+                scope="row"
+              >
+                Lizzie Clarke
+              </th>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-cell-9 MuiTableCell-sizeSmall"
+              >
+                lizzierascal@gmail.com
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-cell-9 MuiTableCell-sizeSmall"
+              >
+                Poole
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;
