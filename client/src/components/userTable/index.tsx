@@ -41,6 +41,7 @@ export const UserTable = ({ children }: UserTableProps) => {
     <Paper className={classes.paper} elevation={2}>
       <TableContainer component={Paper} className={classes.container}>
         <Table
+          data-testid="table"
           className={classes.table}
           size="small"
           stickyHeader

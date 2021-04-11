@@ -34,11 +34,21 @@ function App() {
       <Filter handleChange={handleChange} />
       <UserTable>
         {filteredList.map(({ name, email, location }: User) => (
-          <UserTableItem name={name} email={email} location={location} />
+          <UserTableItem
+            key={email}
+            name={name}
+            email={email}
+            location={location}
+          />
         ))}
       </UserTable>
       {filteredList.length === 0 && (
-        <Alert className={classes.nousers} variant="filled" severity="info">
+        <Alert
+          data-testid="alert"
+          className={classes.nousers}
+          variant="filled"
+          severity="info"
+        >
           There are no users found with that search term.
         </Alert>
       )}

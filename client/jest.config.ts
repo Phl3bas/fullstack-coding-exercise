@@ -9,7 +9,7 @@ export default async (): Promise<Config.InitialOptions> => {
     clearMocks: true,
     globals: {
       "ts-jest": {
-        tsConfig: "tsconfig.test.json",
+        tsconfig: "tsconfig.test.json",
       },
     },
   };

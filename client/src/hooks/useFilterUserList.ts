@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export function useFilteredUserList<T>(
+export function useFilteredUserList(
   filterValue: string,
   filterKey: "name" | "email" | "location",
   list: User[]
@@ -9,16 +9,16 @@ export function useFilteredUserList<T>(
 
   React.useEffect(() => {
     const newList = list.filter((item: User) => {
-      // split each item into array (split on spaces)
       const keywords = item[filterKey].toLowerCase().split(" ");
 
       //   check if the start of any of the keywords match the filtervalue (short circuits are first item found)
       return keywords.some(
-        (v) => v.slice(0, filterValue.length) === filterValue
+        (v) => v.slice(0, filterValue.length) === filterValue.toLowerCase()
       );
     });
+
     setFilteredList(newList);
-  }, [filterValue, filterKey, list]);
+  }, [filterValue, list]);
 
   return filteredList;
 }
